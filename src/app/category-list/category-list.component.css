@@ -1,0 +1,31 @@
+vertical-menu {
+  width: 250px;
+  margin-top: 8%;
+  margin-left: 5%;
+
+}
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #F8694A;
+  color: white;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  position: relative ;
+  margin: auto;
+  top: -20%;
+
+}

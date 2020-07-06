@@ -8,9 +8,10 @@ export class MediaService{
   private mediaUrl: string;
 
   constructor(private http: HttpClient) {
-    this.mediaUrl = 'http://localhost:8080/myshop/Media';
+    this.mediaUrl = '/Media';
   }
   getMediaList(): Observable<any> {
+    console.log('1');
     return this.http.get(`${this.mediaUrl}`);
   }
 }

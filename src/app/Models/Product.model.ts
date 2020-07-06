@@ -2,6 +2,7 @@ import {Category} from './Category.model';
 import {Catalog} from './Catalog.model';
 import {Price} from './Price.model';
 import {StockLevel} from './Stocklevel.model';
+import {Media} from './Media.model';
 
 export class Product{
   id: number;
@@ -12,5 +13,6 @@ export class Product{
   catalog: Catalog;
   price: Price;
   stocklevel: StockLevel;
+  media: Media;
 
 }

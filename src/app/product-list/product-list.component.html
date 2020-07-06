@@ -5,90 +5,28 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
   <link type="text/css" rel="stylesheet" href="product-list.component.css" />
-  <title>Document</title>
 </head>
-<body>
-<header>
-  <div id="top-header">
-    <div class="container">
-      <div class="pull-left">
-        <span>Welcome to My-Shop!</span>
-      </div>
-      <div class="pull-right">
-        <ul class="header-top-links" style="text-align: right; margin-top: 5%">
-          <li><a href="#" >Store</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- /top Header -->
 
-  <div id="header">
-    <div class="container">
-      <div class="pull-left">
-        <!-- Logo -->
-        <div class="header-logo">
-          <a class="logo" href="../app.component.html">
-            <img  src="../img/My-Shop%20.png" >
-          </a>
-        </div>
-        <!-- /Logo -->
-        <!-- Search -->
-        <div class="header-search">
-          <form>
-            <input class="input search-input" type="text" placeholder="Enter your  category">
-            <button class="search-btn"><i class="fa fa-search"></i></button>
-          </form>
-        </div>
-        <!-- /Search -->
-      </div>
-      <div class="pull-right">
-        <ul class="header-btns">
-          <!-- Account -->
-          <li class="header-account dropdown default-dropdown">
-            <div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
-              <div class="header-btns-icon">
-                <i class="fa fa-user-o"></i>
-              </div>
-              <strong class="text-uppercase">My Account </strong>
-            </div>
-
-          </li>
-          <!-- /Account -->
-          <!-- Cart -->
-          <li class="header-account dropdown default-dropdown">
-            <div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
-              <div class="header-btns-icon">
-                <i class="fa fa-shopping-cart"></i>
-              </div>
-              <strong class="text-uppercase">My Cart</strong><br>
-              <div class="pull-right">
-                <ul class="header-top-links" style="text-align: right; margin-top: 5%">
-                  <li><a href="#" >Store</a></li>
-                </ul>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</header>
+<body >
+<br>
+<h2>Vêtements & Chaussures</h2>
 <!-- /HEADER -->
-<div class="card">
-  <img src="../img/banner12.jpg" alt="Denim Jeans" style="width:100%">
-  <div *ngFor="let product of products">
-  <li>{{product.name}}</li>
-  <li class="price">{{product.price}}</li>
-</div>
+<div *ngFor="let product of products">
+<div class="col-md-6 " >
+
+  <img src="../../assets/img/banner10.jpg" alt="Denim Jeans" style="width:100%">
+  <h2  >{{product.name}}</h2>
+  <h2 class="price">{{product.price.value}} DH</h2>
+
   <p><button>Add to Cart</button></p>
+  <p><button>View Product</button></p>
 </div>
+  </div>
+
+
 </body>
+
 </html>

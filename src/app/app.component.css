@@ -240,19 +240,17 @@ textarea.input {
   color: #DADADA;
 }
 #header {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 #top-header {
-  padding-top: 7px;
-  padding-bottom: 29px;
+  padding-top: 5px;
+  padding-bottom: 2px;
   border-bottom: 1px solid #DADADA;
 }
 
 .header-top-links>li {
   display: inline-block;
-
-
 }
 
 .header-top-links>li>a {

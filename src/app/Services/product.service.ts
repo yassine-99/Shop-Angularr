@@ -13,6 +13,7 @@ export class ProductService {
     this.productUrl = '/products';
   }
   getProductList(): Observable<any> {
+    console.log('1');
     return this.http.get(`${this.productUrl}`);
   }
 }
